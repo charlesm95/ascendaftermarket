@@ -69,7 +69,7 @@ font-weight: bolder;
 }
 
 div#div1{
-  background-image: url("media/dash_install.jpg");
+  background-image: url("/media/dash_install.jpg");
   background-size: 600px;
   width: 400px;
   border: 15px solid purple;
