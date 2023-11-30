@@ -1,0 +1,152 @@
+
+
+body{background-color: #BF00FF;}
+header{
+background-color: black;
+border-radius: 10px;
+border: 3px solid white;
+}
+
+main{
+background-color: #FA2FBD;
+border-radius: 10px;
+border: 3px solid white;
+}
+
+
+.grid-container{
+  display: grid;
+  grid-template-areas: 
+    "header header"
+    "main main"
+    "footer footer";
+     min-height: 80vh;
+  margin-top: 4rem;
+  gap: 0.5rem;
+}
+
+footer{
+background-color: black;
+text-align: center;
+color: white;
+border-radius: 10px;
+border: 3px solid white;
+}
+
+h1{
+text-align: center;
+color: #FA2FBD;
+font-size: 50px;
+font-style: italic;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h2{
+text-align: center;
+font-size: 30px;
+font-style: italic;
+color: #FA2FBD;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h3{
+text-align: center;
+font-size: 30px;
+color: #FA2FBD;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+p{
+text-align: left;
+font-size: 20px;
+color: white;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+b{
+font-style: italic;
+font-weight: bolder;
+}
+
+div#div1{
+  background-image: url("/../media/dash_install.jpg");
+  background-size: 600px;
+  width: 400px;
+  border: 15px solid purple;
+  padding: 100px;
+  margin:10px 430px;
+  animation: fade-in 5s forwards;
+}
+div#div2{
+  background-color: black;
+  background-size: 600px;
+  align-items: center;
+  width: 400px;
+  border: 15px solid purple;
+  padding: 100px;
+  margin:10px 430px;
+  animation: fade-in 5s forwards;
+}
+
+div#div3{
+  background-color: black;
+  background-size: 600px;
+  width: 400px;
+  border: 15px solid purple;
+  padding: 100px;
+  margin:10px 430px;
+  animation: fade-in 5s forwards;
+}
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+img#firstimage{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  
+ animation: slide-transform 4s
+}
+
+@keyframes slide-transform {
+  0% {
+    transform: translateX(0);
+  }
+
+  0% {
+    transform: translateX(80vw);
+    border-radius: 50%;
+  }
+
+  100% {
+    transform: translateX(0);
+    border-radius: 0;
+  }
+}
+ 
+
+@media (max-width: 770px) {
+  .grid-container{
+    align-items: left;
+    gap: 1.5rem;
+  }
+ 
+  .grid-container{
+    text-align: center;
+  }
+ 
+  .grid-container{
+    justify-content: center;
+  }
+
+  h2{
+    font-size: medium;
+  }
+}
